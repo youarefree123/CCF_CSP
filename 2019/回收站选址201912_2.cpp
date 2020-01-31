@@ -64,7 +64,6 @@ int main(int argc, char const *argv[])
 	}
 	for(int i = 0 ; i < n; i++){ //需要注意，每次check数组都需要重置
 		if(isGarbageDump(Garbage[i])){
-			cout<<"进去了"<<Garbage[i].first<<"::"<<Garbage[i].second<<endl;
 			mark(Garbage[i]);
 		}
 		memset(check,0,sizeof(check));
